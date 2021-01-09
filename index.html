@@ -32,6 +32,11 @@
 			<li>Valor</li>
 		</ul>
 	</section>
+	<article>
+		<h2>Java Script</h2>
+		<p>Criar interação na web</p>
+		<button>Pinte a página</button>
+	</article>
 	<footer>
 		<p>Marcas | Etiquetas  |Tag</p>
 	</footer>
@@ -42,4 +47,21 @@
 		background-color:brown;
 		color:white;
 	}
+
+	button{
+		padding:20px;
+		background-color:orangered;
+		font-size:20px;
+		color:#fff;
+	}
+
 </style>
+
+<script>
+	const botao=document.getElementsByTagName("button");
+	const corpo=document.getElementsByTagName("body");
+
+		botao[0].onclick=function(){
+			corpo[0].style.backgroundColor="pink";
+		}
+</script>
