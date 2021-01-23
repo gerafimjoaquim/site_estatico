@@ -98,7 +98,7 @@
 .baner{
 	width:100%;
 	display:block;
-	padding:100px;
+	padding:100px 0px;
 	background-color:var(--azul);
 }
 
@@ -106,27 +106,27 @@
 	display:block;
 }
 .baner .container h1{
-	font-size:3rem;
+	font-size:3.5rem;
 	color:#fff;
 	text-align:center;
-	font-weigth:normal;
+	font-weight:normal;
 }
 .baner .container h2{
 	font-size:1.5rem;
 	color:#fff;
 	text-align:center;
-	font-weigth:normal;
+	font-weight:normal;
 	margin-top:10px;
 }
 .baner .container a{
-	width:18%;
-	margin: 20px auto;
+	width:13%;
+	margin: 20px auto auto auto;
 	text-decoration:none;
 	color:#FFF;
-	font-size:1.2rem;
+	font-size:1rem;
 	background-image:linear-gradient(-10deg,#fff,var(--azul),#eee);
 	text-align:center;
-	padding:10px 15px;
+	padding:10px;
 	border-radius:100px;
 	font-weight:bold;
 	transition:.3s;
