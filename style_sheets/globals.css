@@ -10,6 +10,7 @@
 /*VARIÁVEIS*/
 :root{
 	--azul:#1C94D6;
+	--sombra:0px 0px 20px -2px rgba(0,0,0,.1);
 }
 
 
@@ -133,4 +134,77 @@
 }
 .baner .container a:hover{
 	background-image:linear-gradient(10deg,#fff,var(--azul),#eee);
+}
+
+
+.main{
+	width:100%;
+	display:block;
+	background-color:#eeea;
+	padding:20px;
+}
+.main .container{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+
+}
+.main .container aside{
+	flex:1;
+	padding:70px 50px;
+	background-color:#fff;
+	margin:10px;
+	transition:.2s;
+}
+.main .container aside:hover{
+	box-shadow:var(--sombra);
+	margin-top:-1px;
+}
+.main .container aside p{
+	font-size:1.4rem;
+	color:#999b;
+	font-style:italic;
+	line-height:32px;
+}
+.main .container aside p em{
+	font-size:3rem;
+}
+.main .container figure{
+	flex:4;
+	margin:10px;
+	border:10px solid #fff;
+	transition:.2s;
+	position:relative;
+}
+.main .container figure:hover{
+	box-shadow:var(--sombra);
+	margin-top:-1px;
+}
+.main .container figure img{
+	width:100%;
+	height:100%;
+}
+
+.main .container figure nav{
+	position:absolute;
+	top:20%;
+	right:0;
+}
+.main .container figure nav{
+	width:35%;
+}
+.main .container figure nav ul{list-style:none;}
+.main .container figure nav ul li a{
+	display:block;
+	padding:15px;
+	background-color:var(--azul);
+	margin-top:2px;
+	color:#fff;
+	text-decoration:none;
+	font-size:1.1rem;
+	font-weight:bold;
+	transition:.2s;
+}
+.main .container figure nav ul li a:hover{
+	background-color:#000;
 }
