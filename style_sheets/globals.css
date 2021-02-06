@@ -120,7 +120,8 @@
 	margin-top:10px;
 }
 .baner .container a{
-	width:13%;
+	width:120px;
+	min-width:120px;
 	margin: 20px auto auto auto;
 	text-decoration:none;
 	color:#FFF;
@@ -151,6 +152,7 @@
 }
 .main .container aside{
 	flex:1;
+	min-width:250px;
 	padding:70px 50px;
 	background-color:#fff;
 	margin:10px;
@@ -171,6 +173,7 @@
 }
 .main .container figure{
 	flex:4;
+	min-width:250px;
 	margin:10px;
 	border:10px solid #fff;
 	transition:.2s;
@@ -186,17 +189,16 @@
 }
 
 .main .container figure nav{
+	width:35%;
 	position:absolute;
 	top:20%;
 	right:0;
 }
-.main .container figure nav{
-	width:35%;
-}
+
 .main .container figure nav ul{list-style:none;}
 .main .container figure nav ul li a{
 	display:block;
-	padding:15px;
+	padding:10px;
 	background-color:var(--azul);
 	margin-top:2px;
 	color:#fff;
@@ -207,4 +209,9 @@
 }
 .main .container figure nav ul li a:hover{
 	background-color:#000;
+}
+.main .container figure nav ul li a .fab{
+	color:#fff;
+	font-size:1.6rem;
+	margin-left:5px;
 }
