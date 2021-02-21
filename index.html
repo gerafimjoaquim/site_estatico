@@ -62,6 +62,138 @@
 				</figure>
 			</section>
 		</main>
+		<div class="cards">
+			<section class="container">
+				<figure>
+					<img src="images/logo_html.jpg"/>
+					<figcaption>HTML5</figcaption>
+					<p>É uma Linguagem de Marcação de Hipertexto. Ela informa ao navegador o papel semântico de cada bloco de conteúdo que está dentro de uma página Web.</p>
+					<a href="#">Explorar</a>
+				</figure>
+				<figure>
+					<img src="images/logo_css.jpg"/>
+					<figcaption>CSS3</figcaption>
+					<p>É uma linguagem de Estilização que permite criar páginas da web de excelente aparência. Com ela podemos definir o layout e adicionar outros recursos decorativos.</p>
+					<a href="#">Explorar</a>
+				</figure>
+				<figure>
+					<img src="images/logo_javascript.jpg"/>
+					<figcaption>Java Script</figcaption>
+					<p>É uma Linguagem de Programação interpretada, multiparadigma e baseada em objectos, com funções de primeira classe.</p>
+					<a href="#">Explorar</a>
+				</figure>
+			</section>
+		</div>
+		<div class="row">
+			<h2>Comece a estudar hóje mesmo no YouTube</h2>
+		</div>
+		<div class="paralax">
+			<div></div>
+			<div>
+				<h3>Clique no botão abaixo para aceder ao canal</h3>
+				<p>Inscreva-se no Canal e active tadas as notificações.</p>
+				<a href="https://www.youtube.com/channel/UCGRUiZkaTfQKTHZMLzW_efA/videos" target="_blank">Aceder ao Canal<i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+		<section class="videos">
+			<div class="container">
+				<iframe src="https://www.youtube.com/embed/uIHPolMKWpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<iframe src="https://www.youtube.com/embed/jrYZ4X1cZ-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</section>
+		<div class="row about">
+			<h3>Sobre Mim</h3>
+		</div>
+		<section class="about_gerafim">
+			<div class="container">
+				<figure>
+					<img src="images/gerafim_about.jpg" alt="Fotografia do Gerafim"/>
+					<figcaption>Quem Sou?</figcaption>
+					<p>
+						<strong>Gerafim Joaquim</strong>, Electricista montador e Estatístico, nada a ver com Informática.</p>
+
+					<p>Aprendi sozinho a programar e não só, digo que 99% de tudo o que sei sobre computadores (e sei pouquíssimo) aprendi sozinho, lendo tutorias e documentação de cada tecnologia.</p>
+
+					<p>Minha paixão por computadores nasce em 2004, embora na época eu não tivesse tido um contacto directo. em 2008 é que tive a oportunidade de ligar pessoalmente um computador e digitar algumas palavras no Microsoft Word.
+					</p>
+					<div class="favority">
+						<details>
+							<summary>Crença?</summary>
+							<p class="favority_content">Creio em Jesus Cristo, o filho de Deus e meu Salvador.</p>
+						</details>
+						<details>
+							<summary>Melhor diversão?</summary>
+							<ol class="favority_content">
+								<li>Cantar</li>
+								<li>Programar</li>
+								<li>Conversar com família</li>
+							</ol>
+						</details>
+						<details>
+							<summary>Música favorita?</summary>
+							<audio class="favority_content favority_content_audio" type="audio/mp3" src="audios/musica_favorita.mp3" controls></audio>
+						</details>
+						<details>
+							<summary>Filme favorito?</summary>
+							<video class="favority_content favority_content_video" controls>
+								<source src="videos/video_favorito.mp4" type="video/mp4"/>
+							</video>
+						</details>
+					</div>
+				</figure>
+
+				<form name="contact_form" method="POST" action="">
+					<h2>Fale comigo</h2>
+
+					<input type="text" placeholder="Seu nome" required name="contact_name"/>
+					<input type="email" placeholder="Seu email" required name="contact_mail"/>
+					<input type="tel" placeholder="Cell: 84-0101001" pattern="[0-9]{2}-[0-9]{7}" name="contact_phone"/>
+					<fieldset>
+						<legend>Sexo</legend>
+						<label for="masc">
+							<input type="radio" name="sexo" id="masc"/>
+							Masculino
+						</label>
+						<label for="fem">
+							<input type="radio" name="sexo" id="fem"/>
+							Feminino
+						</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Sua província</legend>
+						<select name="contact_province">
+							<option>Niassa</option>
+							<option>Cabo-Delgado</option>
+							<option>Nampula</option>
+							<option selected>Zambézia</option>
+							<option>Tete</option>
+							<option>Manica</option>
+							<option>Sofala</option>
+							<option>Inhambane</option>
+							<option>Gaza</option>
+							<option>Maputo-Cidade</option>
+							<option>Maputo-Província</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<legend>Tecnologias favoritas</legend>
+						<label><input type="checkbox" name="excel"> Excel</label>
+						<label><input type="checkbox" name="access"> Access</label>
+						<label><input type="checkbox" name="js"> Java Script</label>
+						<label><input type="checkbox" name="java"> JAVA</label>
+						<label><input type="checkbox" name="py"> Python</label>
+						<label><input type="checkbox" name="php"> PHP</label>
+					</fieldset>
+					<fieldset>
+						<legend>Níve de conhecimento Front-End</legend>
+						<input type="range" value="0" step=".5" name="contact_frontend_level"/>
+					</fieldset>
+					<input type="submit" value="Enviar"/>
+				</form>
+			</div>
+		</section>
 		<footer></footer>
 	</body>
 </html>

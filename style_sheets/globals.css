@@ -215,3 +215,315 @@
 	font-size:1.6rem;
 	margin-left:5px;
 }
+
+.cards{
+	width:100%;
+	display:block;
+	background-color:#eeea;
+	padding-bottom:40px;
+}
+.cards .container{
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+	column-gap:50px;
+	row-gap:20px;
+	padding:0px 30px;
+
+}
+.cards .container figure{
+	padding:10px;
+	background-color:#fff;
+	transition:.2s;
+	cursor:pointer;
+}
+.cards .container figure:hover{
+	box-shadow:0px 0px 20px -5px rgba(0,0,0,.4);
+	margin-top:-5px;
+}
+.cards .container figure img{width:100%;}
+.cards .container figure figcaption{
+	font-size:1.7rem;
+	color:#999;
+	text-align:center;
+	font-weight:bold;
+	margin-top:10px;
+}
+
+.cards .container figure p{
+	text-align:center;
+	font-size:1.1rem;
+	line-height:24px;
+	color:#999;
+	padding:20px;
+}
+.cards .container figure a{
+	display:block;
+	width:100px;
+	min-width:100px;
+	margin:10px auto;
+	color:#777;
+	font-weight:bold;
+	background-image:linear-gradient(-10deg, #ddd, #fff, #ddd);
+	padding:8px 10px;
+	text-align:center;
+	border-radius:50px;
+	text-decoration:none;
+	border:.5px solid #ddd;
+}
+.cards .container figure a:hover{
+	background-image:linear-gradient(10deg, #ddd, #fff, #ddd);
+}
+
+/*PARALAX*/
+.row{
+	width:100%;
+	display:block;
+	background-color:#fff;
+	padding:50px 0px;
+}
+.row h2{
+	text-align:center;
+	font-size:2.5rem;
+	color:#555;
+	font-weight:normal;
+}
+
+.paralax{
+	width:100%;
+	height:600px;
+	background-image:url("../images/gerafim_paralax.jpg");
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	position:relative;
+}
+
+.paralax div:first-child{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#fffa;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+.paralax div:last-child{
+	position:absolute;
+	width:22%;
+	height:100%;
+	background-color:var(--azul);
+	left:15%;
+	padding:60px 30px;
+}
+.paralax div:last-child h3{
+	text-align:center;
+	font-size:1.8rem;
+	color:#fff;
+	font-weight:normal;
+	line-height:35px;
+}
+.paralax div:last-child p{
+	text-align:center;
+	font-size:1.2rem;
+	font-weight:normal;
+	margin-top:10px;
+	color:#fff;
+	line-height:24px;
+}
+.paralax div:last-child a{
+	width:100%;
+	background-color:#000;
+	display:block;
+	padding:10px;
+	margin-top:20px;
+	text-align:center;
+	color:#fff;
+	font-size:1.2rem;
+	font-weight:normal;
+	text-decoration:none;
+	border-radius:8px;
+}
+.paralax div:last-child a .fab{
+	margin-left:20px;
+}
+.paralax div:last-child a:hover{
+	background-color:#fff;
+	color:#000;
+}
+.paralax div:last-child a:hover .fab{
+	color:red;
+}
+
+/*VIDEOS DO YOUTUBE*/
+.videos{
+	width:100%;
+	background-color:#eeea;
+	display:block;
+	padding:40px 0px;
+}
+.videos .container{
+	padding: 0px 30px;
+	display:flex;
+	justify-content:space-between;
+}
+.videos .container iframe{
+	width:48%;
+	height:250px;
+	border:10px solid #fff;
+	box-shadow:0px 0px 5px -1px rgba(0,0,0,.2);
+}
+
+/*SOBRE MIM*/
+.about{
+	background-color:var(--azul);
+}
+.about h3{
+	font-size:3rem;
+	text-align:center;
+	color:#fff;
+	font-weight:normal;
+}
+
+.about h3:after{
+	content: "Tudo o que precisa saber";
+	display:block;
+	font-size:1.7rem;
+	margin-top:10px;
+}
+.about_gerafim{
+	display:block;
+	width:100%;
+	background-color:#eeea;
+	padding:20px 0px;
+}
+.about_gerafim .container{
+	padding:0px 30px;
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+	column-gap:20px;
+}
+.about_gerafim .container figure,.about_gerafim .container form{
+	background-color:#fff;
+	padding:10px;
+}
+.about_gerafim .container figure img{width:100%;}
+.about_gerafim .container figure figcaption{
+	font-size:2rem;
+	font-weight:normal;
+	color:#666;
+	text-align:center;
+	margin-top:10px;
+}
+.about_gerafim .container figure p{
+	line-height:24px;
+	color:#999;
+	font-size:1.2rem;
+	padding:10px 20px 20px 20px;
+	margin-top:5px;
+}
+.about_gerafim .container figure p strong{
+	background-color:#eee;
+	font-style:italic;
+	padding:3px 5px;
+}
+
+/*ÁREA DE FAVORITOS*/
+.about_gerafim .container figure .favority{
+	display:block;
+	width:100%;
+	padding:0px 20px;
+}
+.about_gerafim .container figure .favority details summary{
+	padding:10px 15px;
+	background-color:var(--azul);
+	border-bottom:.5px solid #eeea;
+	color:#fff;
+	font-size:1.2rem;
+	cursor:pointer;
+	outline:none;
+}
+.about_gerafim .container figure .favority details summary:hover{
+	background-color:#1C94D6aa;
+}
+.about_gerafim .container figure .favority details p, .about_gerafim .container figure .favority details ol li{
+	font-size:1rem;
+	color:#999;
+}
+.about_gerafim .container figure .favority details .favority_content{
+	width:100%;
+	border:.5px solid #eee;
+	padding:20px;
+	outline:none;
+}
+.about_gerafim .container figure .favority details .favority_content_audio{
+	padding:2px;
+}
+.about_gerafim .container figure .favority details .favority_content_video{
+	width:100%;
+}
+.about_gerafim .container figure .favority details[open] .favority_content{
+	margin:5px 0px 5px 0px;
+}
+
+/*FORMULÁRIO DE CONTACTO*/
+.about_gerafim .container form{
+	padding:30px;
+}
+.about_gerafim .container form h2{
+	font-size:2rem;
+	color:#888;
+	display:block;
+	text-align:center;
+	font-weight:normal;
+	padding:20px 0px;
+}
+.about_gerafim .container form input[name="contact_name"],
+.about_gerafim .container form input[name="contact_mail"],
+.about_gerafim .container form input[name="contact_phone"],
+.about_gerafim .container form select{
+	display:block;
+	width:100%;
+	margin-top:5px;
+	padding:10px 15px;
+	font-size:1.2rem;
+	border:1px solid #ccc;
+	outline-color:var(--azul);
+	color:#888;
+}
+.about_gerafim .container form fieldset{
+	padding:20px;
+	border:1px solid #ccc;
+	margin-top:10px;
+}
+.about_gerafim .container form fieldset legend{
+	color:#999;
+	font-size:1rem;
+	text-transform:uppercase;
+}
+.about_gerafim .container form fieldset label{
+	display:block;
+	margin-top:10px;
+	color:#888;
+}
+.about_gerafim .container form input[type="range"]{
+	width:100%;
+}
+.about_gerafim .container form input[type="submit"]{
+	display:block;
+	background-image:linear-gradient(-10deg, #eee, #fff, #eee);
+	padding:10px 15px;
+	border:.5px solid #eee;
+	border-radius:50px;
+	margin-top:10px;
+	color:#999;
+	font-weight:bold;
+	cursor:pointer;
+	trasition:.2s;
+
+}
+.about_gerafim .container form input[type="submit"]:hover{
+	background-image:linear-gradient(-10deg, #fff, #eee, #fff);
+}
